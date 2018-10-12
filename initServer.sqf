@@ -23,5 +23,15 @@
 	_UID = (_data select 1);
 
 	_database = ["new", _UID] call OO_INIDBI;
+	["write", ["Player Gear Start", "gear", _gear]] call _database
+};
+
+"saveDataEnd" addPublicVariableEventHandler{
+	private ["_data"];
+	_data = (_this select 1);
+	_gear = (_data select 0);
+	_UID = (_data select 1);
+
+	_database = ["new", _UID] call OO_INIDBI;
 	["write", ["Player Gear", "gear", _gear]] call _database
 };
