@@ -9,7 +9,7 @@
 	_doesFileExist = "exists" call _database;
 	if(_doesFileExist)then	{
 		hint "file does exist, getting data";
-		null = [_UID] execVM "getData.sqf";
+		null = [_UID, _clientID] execVM "getData.sqf";
 	}	else	{
 		hint "file does not exists, creating database";
 		null =[_clientID,_UID,_playerName] execVM "createDatabase.sqf";

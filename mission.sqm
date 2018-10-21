@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=3;
+		nextID=4;
 	};
 	class Camera
 	{
-		pos[]={17212.232,31.585285,13268.245};
-		dir[]={-0.35102868,-0.68808937,0.63508773};
-		up[]={-0.33286318,0.72562402,0.60222185};
-		aside[]={0.87522095,1.3643876e-007,0.48375547};
+		pos[]={17182.137,22.821081,13283.485};
+		dir[]={0.84905505,-0.47677705,-0.22773191};
+		up[]={0.4605405,0.87900245,-0.12352645};
+		aside[]={-0.25907329,-4.5681372e-007,-0.96589553};
 	};
 };
 binarizationWanted=0;
@@ -165,7 +165,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			dataType="Group";
@@ -319,6 +319,22 @@ class Mission
 			{
 			};
 			id=1;
+		};
+		class Item1
+		{
+			dataType="Trigger";
+			position[]={17213.354,13.06898,13272.131};
+			class Attributes
+			{
+				sizeA=5;
+				sizeB=5;
+				sizeC=5;
+				activationBy="WEST";
+				type="END1";
+				isRectangle=1;
+			};
+			id=3;
+			type="EmptyDetectorArea10x10";
 		};
 	};
 };

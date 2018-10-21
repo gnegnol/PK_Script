@@ -6,3 +6,8 @@ saveData = [_gear, _UID];
 checkForDatabase = [_clientID, _UID, _name];
 publicVariableServer "checkForDatabase";
 publicVariableServer "saveData";
+
+"loadData" addPublicVariableEventHandler{
+	_gear = (_this select 1);
+	player setUnitLoadout _gear;
+}
