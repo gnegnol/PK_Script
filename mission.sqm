@@ -178,13 +178,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17193.307,12.81627,13284.043};
+						position[]={17193.307,12.816273,13284.043};
 						angles[]={0,1.3405176,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						name="lookForThis";
 						isPlayer=1;
 						class Inventory
 						{
@@ -270,14 +271,54 @@ class Mission
 					};
 					id=2;
 					type="B_Soldier_A_F";
-					atlOffset=-2.8610229e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1;
-			atlOffset=-2.8610229e-006;
 		};
 	};
 };
